@@ -9,21 +9,60 @@
 // Example:
 // removeMiddleName("Morty Antoine Smith") should return "Morty Smith"
 // removeMiddleName("Morty Smith") should return "Morty Smith"
-// removeMiddleName("Morty") should return "Morty"
+// removeMiddleName("cc") should return "Morty"
 // removeMiddleName("Morty Antoine Fred Bacon Smith") should return "Morty Smith"
 
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(string) {
-  // complete the function
+function removeMiddleName(
+  firstName,
+  middleName,
+  lastName,
+  firstName2,
+  middleName2,
+  lastName2
+) {
+  return (
+    firstName + middleName + lastName + firstName2 + middleName2 + lastName2
+  );
 }
+
+let MortyAntoineSmith = removeMiddleName(
+  " Morty  ",
+  " ",
+  " Smith, ",
+  " ",
+  " ",
+  ""
+);
+
+console.log(MortyAntoineSmith);
+
+let MortySmith = removeMiddleName(" Morty  ", " ", "Smith, ", "  ", " ", "");
+
+let cc = removeMiddleName(" Morty,  ", " ", "", "  ", " ", "");
+
+let MortyAntoineFredBaconSmith = removeMiddleName(
+  " Morty  ",
+  " ",
+  "smith,",
+  "",
+  "",
+  "",
+  "",
+  ""
+);
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(removeMiddleName("Morty Antoine Smith"));
+console.log(MortyAntoineSmith);
+console.log(MortySmith);
+console.log(cc);
+console.log(MortyAntoineFredBaconSmith);
 
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;

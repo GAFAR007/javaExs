@@ -1,31 +1,31 @@
---- 
+---
 marp: true
 ---
 
 # JavaScript FUNdamentals
+
 ## Functions
 
 ---
 
-
-
 - Functions are the main “building blocks” of a program. They allow the code to be called many times without repetition.
 - They should take some input and `return` an output.
 - They should also be considered black boxes. They take an input, or many, and output something.
-- Functions need to be **called**. 
+- Functions need to be **called**.
 
 > A function that is never called is like a computer that is never turned on.
 
 ---
 
- ## Example 1
+## Example 1
 
 ```js
 // Formula for the area of a rectangle
-"The area of a rectangle is equal to it's length multiplied by it's width"
+"The area of a rectangle is equal to it's length multiplied by it's width";
 
 // Turn that into a more math-like function
-area = width * length
+
+area = width * length;
 
 // Define JavaScript function
 
@@ -34,14 +34,14 @@ area = width * length
 
 ---
 
- ## Example 2
+## Example 2
 
 ```js
 // Formula for the area of a circle
-"The area of a circle is equal to pi times the radius squared"
+"The area of a circle is equal to pi times the radius squared";
 
 // Turn that into a more math-like function
-area = pi * radius * radius
+area = pi * radius * radius;
 
 // Define JavaScript function
 
@@ -49,8 +49,6 @@ area = pi * radius * radius
 ```
 
 ---
-
-
 
 - Functions let you group and reuse code.
 - Define a function with parameters between the brackets.
@@ -67,7 +65,7 @@ area = pi * radius * radius
 ```js
 // Q1. Write a function that returns the sum of 3 numbers.
 
-// Q2. Write a function that returns the square 
+// Q2. Write a function that returns the square
 // of a number minus twice the number.
 
 // Q3. Write a function that returns the a
@@ -79,7 +77,7 @@ area = pi * radius * radius
 ## Exercises
 
 ```js
-// Q4. Write a function that returns the value of the tax (15%) 
+// Q4. Write a function that returns the value of the tax (15%)
 // for a given amount.
 
 // Q5. Write a function that returns the value 42.
@@ -88,8 +86,6 @@ area = pi * radius * radius
 ```
 
 ---
-
-
 
 - Functions are key in implementing software development principles.
 - Complexity emerges from simplicity.

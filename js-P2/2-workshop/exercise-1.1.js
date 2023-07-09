@@ -7,16 +7,12 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function countNames(fullName) {
-  // complete the function
-  return fullName.split(" ");
+function countNames(n1, n2, n3) {
+  return n1 + n2 + n3;
 }
-// -----------------------------------------------------------------
-// Edit only the code between the lines (above)
-//
 
-// Call the function to test your code.
-console.log(countNames("Morty Antoine Smith"));
+let result = countNames("morty", "Antoine", "smith");
 
-// This is needed for automated testing (more on that later)
+console.log(result);
+
 module.exports = countNames;

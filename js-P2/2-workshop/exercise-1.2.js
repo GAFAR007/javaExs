@@ -9,19 +9,25 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function arrOFNames(string) {
-  // complete the function
+function arrOFNames(a1, a2, a3, a4, a5, a6, a7, a8) {
+  return a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8;
 }
+let result3 = arrOFNames(
+  "Simple Rick",
+  "Slow Rick",
+  "Tall Rick",
+  "Cop Rick",
+  "Doofus Rick",
+  "Past Rick",
+  "Replacement Rick",
+  "Rick C-137"
+);
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(
-  arrOFNames(
-    "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
-  )
-);
+console.log(result3);
 
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;
