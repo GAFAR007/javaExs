@@ -9,7 +9,18 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+const array = ["I", "bacon", "you", "she"];
+const string = "bacon";
+
 function removeStringFromArray(array, string) {
+  array.filter((word) => {
+    if (word !== "bacon") {
+      console.log(word + " thank God");
+      return word;
+    }
+  }),
+    console.log(!string + " Yes");
+
   // complete the function
 }
 // -----------------------------------------------------------------
