@@ -8,6 +8,7 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+
 function decodeMessage(string, notCode) {
   const words = codedString.split(" ");
   const filteredWords = words.filter((word) => !notCodeWords.includes(word));
