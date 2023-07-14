@@ -8,13 +8,21 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
+  ist.filter((value) => {
+    if (value % 2) {
+      return value;
+    }
+
+    console.log(value + " Even number");
+  });
+
   // list is an array of numbers
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 // Call the function to test your code.
-console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // This is needed for automated testing (more on that later)
 module.exports = removeEvens;
