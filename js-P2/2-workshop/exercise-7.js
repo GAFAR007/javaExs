@@ -8,6 +8,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
+  list.filter((word) => {
+    if (word === "Flash") {
+      console.log(true);
+    } else {
+      console.log(list + " new string");
+    }
+  });
   // list is an array of strings
 }
 // -----------------------------------------------------------------
@@ -15,9 +22,7 @@ function keepLong(list) {
 //
 
 // Call the function to test your code.
-console.log(
-  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
-);
+keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"]);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;
