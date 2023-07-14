@@ -33,7 +33,7 @@ const myArray = [
   "funky",
 ];
 
-const item = "elephant";
+const item = "elephants";
 
 // Call the function to test your code.
 itemIsPresent(myArray, item); //false(x8)
