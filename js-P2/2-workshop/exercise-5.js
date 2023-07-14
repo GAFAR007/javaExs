@@ -36,10 +36,10 @@ const myArray = [
 const item = "elephant";
 
 // Call the function to test your code.
-itemIsPresent(myArray, item); //true
+itemIsPresent(myArray, item); //false(x8)
 
-itemIsPresent(myArray, "funky"); // true
-itemIsPresent(myArray, "elephant"); // false
+itemIsPresent(myArray, "funky"); // false(x7), true
+itemIsPresent(myArray, "elephant"); // false(x8)
 
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;
