@@ -5,7 +5,16 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function itemIsPresent(array, item) {
+function itemIsPresent(myArray, item) {
+  array.filter((word) => {
+    if (word === item) {
+      console.log(true);
+    } else {
+      if (word !== item) {
+      }
+      console.log(false);
+    }
+  });
   // code here
 }
 // -----------------------------------------------------------------
@@ -24,9 +33,13 @@ const myArray = [
   "funky",
 ];
 
+const item = "elephant";
+
 // Call the function to test your code.
-console.log(itemIsPresent(myArray, "funky")); // true
-console.log(itemIsPresent(myArray, "elephant")); // false
+itemIsPresent(myArray, item); //true
+
+itemIsPresent(myArray, "funky"); // true
+itemIsPresent(myArray, "elephant"); // false
 
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;
