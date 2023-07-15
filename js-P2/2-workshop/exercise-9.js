@@ -9,6 +9,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
+  list.filter((word) => {
+    if (word !== "") {
+      console.log("hello " + word);
+    }
+  });
+  console.log(list);
+
   // list is an array of strings
 }
 // -----------------------------------------------------------------
@@ -16,7 +23,7 @@ function greetLong(list) {
 //
 
 // Call the function to test your code.
-console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
+greetLong(["Scott", "Bob", "Ric", "Jim"]);
 
 // This is needed for automated testing (more on that later)
 module.exports = greetLong;

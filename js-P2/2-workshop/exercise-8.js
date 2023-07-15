@@ -8,14 +8,19 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+  let sayHello = "hello ";
+  list.filter((word) => {
+    if (word !== "") {
+      console.log(sayHello + word);
+    }
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
+greet(["David", "Billy", "Lisa", "Jennifer"]);
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;

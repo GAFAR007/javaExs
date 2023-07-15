@@ -12,7 +12,7 @@ function keepLong(list) {
     if (word === "Flash") {
       console.log(true);
     } else {
-      console.log(list + " new string");
+      console.log(list + " new. string");
     }
   });
   // list is an array of strings
