@@ -8,11 +8,11 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function characterCount(ab, c, def) {
-  return ab + c + def;
+function characterCount(oneString) {
+  let result = oneString.length;
+  console.log(result);
 }
-let result4 = characterCount(3, 1, 4);
-
+characterCount("ab c def");
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

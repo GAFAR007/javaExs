@@ -9,18 +9,15 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function arrOFNames(a1, a2, a3, a4, a5, a6, a7, a8) {
-  return a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8;
+
+function arrOFNames(word) {
+  let result = word.split(",");
+  return result;
 }
-let result3 = arrOFNames(
-  "Simple Rick",
-  "Slow Rick",
-  "Tall Rick",
-  "Cop Rick",
-  "Doofus Rick",
-  "Past Rick",
-  "Replacement Rick",
-  "Rick C-137"
+console.log(
+  arrOFNames(
+    "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137"
+  )
 );
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

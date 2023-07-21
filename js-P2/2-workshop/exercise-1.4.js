@@ -15,54 +15,30 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(
-  firstName,
-  middleName,
-  lastName,
-  firstName2,
-  middleName2,
-  lastName2
-) {
-  return (
-    firstName + middleName + lastName + firstName2 + middleName2 + lastName2
-  );
+function removeMiddleName(string) {
+  let countString = string.length;
+  console.log(countString);
+
+  let splitString = string.split(" ");
+  console.log(splitString);
+
+  let firstName = splitString.slice(0, 1);
+  console.log(firstName);
+  let lastName = splitString.slice(-1);
+  console.log(lastName);
+
+  console.log(firstName + " " + lastName);
 }
-
-let MortyAntoineSmith = removeMiddleName(
-  " Morty  ",
-  " ",
-  " Smith, ",
-  " ",
-  " ",
-  ""
-);
-
-console.log(MortyAntoineSmith);
-
-let MortySmith = removeMiddleName(" Morty  ", " ", "Smith, ", "  ", " ", "");
-
-let cc = removeMiddleName(" Morty,  ", " ", "", "  ", " ", "");
-
-let MortyAntoineFredBaconSmith = removeMiddleName(
-  " Morty  ",
-  " ",
-  "smith,",
-  "",
-  "",
-  "",
-  "",
-  ""
-);
 
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(MortyAntoineSmith);
-console.log(MortySmith);
-console.log(cc);
-console.log(MortyAntoineFredBaconSmith);
+
+removeMiddleName("Morty Antoine Smith");
+//removeMiddleName("Morty Smith")
+//removeMiddleName("cc")
 
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;

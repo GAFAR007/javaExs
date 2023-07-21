@@ -7,12 +7,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function countNames(n1, n2, n3) {
-  return n1 + n2 + n3;
+
+function countNames(word) {
+  let nameSplit = word.split(" ");
+  console.log(nameSplit);
+  return nameSplit.length;
 }
 
-let result = countNames("morty", "Antoine", "smith");
-
-console.log(result);
+console.log(countNames("morty Antoine smith"));
 
 module.exports = countNames;
