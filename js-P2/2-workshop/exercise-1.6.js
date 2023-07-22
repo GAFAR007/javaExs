@@ -9,26 +9,29 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-const array = ["I", "bacon", "you", "she"];
-const string = "bacon";
+let array = "dave, bacon, you, she";
+console.log(array);
+let string = "bacon";
 
-function removeStringFromArray(array, string) {
-  array.filter((word) => {
-    if (word !== "bacon") {
-      console.log(word + " thank God");
+function removeBacon(words) {
+  let splitWordIntoArra = words.split(",");
+  console.log(splitWordIntoArra);
+
+  let removeBacon = splitWordIntoArra.filter((word) => {
+    if (word !== " bacon") {
       return word;
     }
-  }),
-    console.log(!string + " Yes");
-
-  // complete the function
+  });
+  console.log(removeBacon);
 }
+
+// complete the function
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
-
+removeBacon(array);
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;

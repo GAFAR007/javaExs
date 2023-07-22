@@ -10,22 +10,26 @@
 // -----------------------------------------------------------------
 
 function decodeMessage(string, notCode) {
-  const words = codedString.split(" ");
-  const filteredWords = words.filter((word) => !notCodeWords.includes(word));
-  const decodedString = filteredWords.join(" ");
-  // complete the function
+  let splitString = string.split("not");
+  console.log(splitString);
+
+  let firstWord = splitString.slice(0, 1);
+  console.log(firstWord);
+
+  let secondWord = splitString.slice(-1);
+  console.log(secondWord);
+
+  console.log(firstWord + secondWord);
 }
 
-const codedString = "I amnot the walrus.";
-const notCodeWords = ["not"];
+let codedString = "I amnot the walrus.";
+let notCodeWords = "not";
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
-// Call the function to test your code.
-
-const decodedString = decodeMessage(codedString, notCodeWords);
-console.log(decodedString);
+// Call the function to test your code
+decodeMessage(codedString, notCodeWords);
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;
