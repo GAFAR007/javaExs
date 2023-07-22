@@ -9,10 +9,8 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   list.filter((word) => {
-    if (word === "Flash") {
-      console.log(true);
-    } else {
-      console.log(list + " new. string");
+    if (word.length > 5) {
+      console.log(word);
     }
   });
   // list is an array of strings
