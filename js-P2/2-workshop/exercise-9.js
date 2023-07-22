@@ -10,11 +10,10 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   list.filter((word) => {
-    if (word !== "") {
+    if (word.length >= 4) {
       console.log("hello " + word);
     }
   });
-  console.log(list);
 
   // list is an array of strings
 }
