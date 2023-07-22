@@ -6,14 +6,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 
-const num1 = 3;
-const num2 = 1;
-const num3 = 1;
-const num4 = 1;
-const num5 = 1;
-
 function calculateAverage(num1, num2, num3, num4, num5) {
-  console.log((num1 + num2 + num3 + num4 + num5) / 5);
+  average = (num1 + num2 + num3 + num4 + num5) / 5;
+  console.log(average);
   // code here
 }
 // -----------------------------------------------------------------
