@@ -20,7 +20,7 @@ function getMax(num1, num2) {
 // Edit only the code between the lines (above)
 //
 
-// Call the function to test your code.
+// Call the function to test your code
 getMax(6, 2);
 
 // This is needed for automated testing (more on that later)
