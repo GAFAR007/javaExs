@@ -13,8 +13,12 @@ const num1 = 12;
 const num2 = 24;
 
 function getMax(num1, num2) {
-  if (num1) {
-    console.log(getMax.max());
+  if (num1 < num2) {
+    return num2;
+  } else if (num1 > num2) {
+    console.log(num2);
+  } else {
+    console.log("0");
   }
   // code here
 }
