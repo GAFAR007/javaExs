@@ -22,7 +22,7 @@ function getEvens(list) {
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-// Call the function to test your code.
+// Call the function to test your code
 getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // This is needed for automated testing (more on that later)
