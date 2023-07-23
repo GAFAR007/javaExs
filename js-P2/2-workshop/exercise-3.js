@@ -8,23 +8,22 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getMax(num1, num2) {
-  if (num1 < num2) {
-    console.log(num2);
-  } else if (num1 > num2) {
-    console.log(num1);
-  } else {
-    console.log(0);
-  }
-}
 
+const getMax = (num1, num2) => {
+  if (num1 < num2) {
+    return num2;
+  } else if (num1 > num2) {
+    return num1;
+  } else {
+    return "0";
+  }
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-
-getMax(2, 3);
+console.log(getMax(89, 9));
 
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

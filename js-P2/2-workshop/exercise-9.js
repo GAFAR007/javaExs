@@ -8,7 +8,7 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greetLong(list) {
+const greetLong = (list) => {
   list.filter((word) => {
     if (word.length >= 4) {
       console.log("hello " + word);
@@ -16,7 +16,7 @@ function greetLong(list) {
   });
 
   // list is an array of strings
-}
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

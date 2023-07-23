@@ -6,9 +6,25 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 
-function calculateAverage(num1, num2, num3, num4, num5) {
-  average = (num1 + num2 + num3 + num4 + num5) / 5;
-  console.log(average);
+function calculateAverage(array) {
+  let Array = array;
+  console.log(Array);
+
+  let arrayLength = array.length;
+  console.log(arrayLength);
+
+  let sunOfArray = 0;
+  array.forEach((num) => {
+    sunOfArray += num;
+  });
+  console.log(sunOfArray);
+
+  let sumAverage = sunOfArray / arrayLength;
+  console.log(sumAverage);
+
+  const roundNum = Math.round(sumAverage);
+
+  console.log(roundNum);
   // code here
 }
 // -----------------------------------------------------------------
@@ -16,7 +32,7 @@ function calculateAverage(num1, num2, num3, num4, num5) {
 //
 
 // Call the function to test your code.
-calculateAverage(3, 1, 1, 1, 1);
+calculateAverage([3, 6, 7, 2, 4]);
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;

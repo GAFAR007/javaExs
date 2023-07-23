@@ -7,14 +7,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function keepLong(list) {
+const keepLong = (list) => {
   list.filter((word) => {
     if (word.length > 5) {
       console.log(word);
     }
   });
   // list is an array of strings
-}
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

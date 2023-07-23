@@ -5,7 +5,7 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function itemIsPresent(myArray, item) {
+const itemIsPresent = (myArray, item) => {
   array.filter((word) => {
     if (word === item) {
       console.log(true);
@@ -16,7 +16,7 @@ function itemIsPresent(myArray, item) {
     }
   });
   // code here
-}
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

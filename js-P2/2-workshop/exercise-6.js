@@ -7,17 +7,17 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getEvens(list) {
+const getEvens = (list) => {
   let evenNUm = list.filter((value) => {
     if (value % 2) {
       return value;
     }
   });
 
-  console.log(evenNUm);
+  // console.log(evenNUm);
 
   // list is an array of numbers
-}
+};
 
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

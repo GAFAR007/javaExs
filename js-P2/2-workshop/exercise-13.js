@@ -5,15 +5,28 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function countBs(str) {
+let countBs = (str) => {
+  console.log(str);
+
+  let splitString = str.split("");
+  console.log(splitString);
+
+  let filter = splitString.filter((word) => {
+    if (word === "B") {
+      return word;
+    }
+  });
+  console.log(filter);
+  console.log(filter.join());
+  console.log(filter.length);
   // str is a string
-}
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code.
-console.log(countBs("BananaBabyBubbles"));
+countBs("BananaBabyBubbles");
 
 // This is needed for automated testing (more on that later)
 module.exports = countBs;

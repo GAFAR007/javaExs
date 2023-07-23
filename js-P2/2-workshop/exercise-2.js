@@ -5,23 +5,21 @@
 //
 //
 // Edit only the code between the lines (below)
-
-function getMax(num1, num2) {
+const  getMax = (num1, num2) => {
   if (num1 > num2) {
-    console.log(num1);
+    return num1;
   } else if (num1 < num2) {
-    console.log(num2);
+    return num2;
   } else if ((nub1 = num2)) {
-    console.log("0");
+    return "0";
   }
 }
-
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 
 // Call the function to test your code
-getMax(6, 2);
+console.log(getMax(6, 9));
 
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

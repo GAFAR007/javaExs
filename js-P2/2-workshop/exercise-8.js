@@ -7,14 +7,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greet(list) {
+const greet = (list) => {
   let sayHello = "hello ";
   list.filter((word) => {
     if (word !== "") {
       console.log(sayHello + word);
     }
   });
-}
+};
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
